@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="user" class="_01_induction.demo.User"></bean>
+<!--    <bean id="userNoneNoConstruction" class="_02_test.noconstruction.UserNoneNoConstruction"></bean>-->
+    <bean id="userDependenceInjection" class="_03_DependenceInjection.set.User">
+        <property name="name" value="test"></property>
+    </bean>
+
+
+
+    <bean id="userPName" class="_03_DependenceInjection.pname.User" p:name="Pname"></bean>
+
+</beans>
