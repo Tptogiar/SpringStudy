@@ -10,10 +10,12 @@
         <module name="SpringStudy" />
         <module name="SpringAnnotationDemo" />
         <module name="SpringXMLDemo" />
+        <module name="SpringAOPDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SpringAnnotationDemo" target="1.5" />
+      <module name="SpringAOPDemo" target="1.5" />
       <module name="SpringStudy" target="1.5" />
       <module name="SpringXMLDemo" target="1.5" />
     </bytecodeTargetLevel>
