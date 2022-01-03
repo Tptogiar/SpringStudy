@@ -27,6 +27,21 @@ public class Main {
     }
 
 
+    @Test
+    public void testResource(){
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("DependenceInject.xml");
+        UserServiceImpl userService = context.getBean("userServiceImpl", UserServiceImpl.class);
+        userService.getPhoneDaoResource().add();
+    }
+
+    @Test
+    public void testValue(){
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("DependenceInject.xml");
+        UserServiceImpl userService = context.getBean("userServiceImpl", UserServiceImpl.class);
+        System.out.println(userService.getStrValue());
+        System.out.println(userService.getIntValue());
+        System.out.println(userService.getDoubleValue());
+    }
 
 
 
