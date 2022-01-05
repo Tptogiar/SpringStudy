@@ -3,11 +3,14 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/SpringXMLDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringAnnotationDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringAOPDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringJDBCTemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringTransactionsDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringJDBCTemplateDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringJdbcTemplateDemo/pom.xml" />
       </list>
     </option>
   </component>
