@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringAOPDemo/SpringAOPDemo.iml" filepath="$PROJECT_DIR$/SpringAOPDemo/SpringAOPDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringAnnotationDemo/SpringAnnotationDemo.iml" filepath="$PROJECT_DIR$/SpringAnnotationDemo/SpringAnnotationDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJDBCTemplate/SpringJDBCTemplate.iml" filepath="$PROJECT_DIR$/SpringJDBCTemplate/SpringJDBCTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringStudy.iml" filepath="$PROJECT_DIR$/SpringStudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringXMLDemo/SpringXMLDemo.iml" filepath="$PROJECT_DIR$/SpringXMLDemo/SpringXMLDemo.iml" />
     </modules>

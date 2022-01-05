@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringStudy" />
+        <module name="SpringJDBCTemplate" />
         <module name="SpringAnnotationDemo" />
         <module name="SpringXMLDemo" />
         <module name="SpringAOPDemo" />
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="SpringAnnotationDemo" target="1.5" />
       <module name="SpringAOPDemo" target="1.5" />
+      <module name="SpringJDBCTemplate" target="1.5" />
       <module name="SpringStudy" target="1.5" />
       <module name="SpringXMLDemo" target="1.5" />
     </bytecodeTargetLevel>
