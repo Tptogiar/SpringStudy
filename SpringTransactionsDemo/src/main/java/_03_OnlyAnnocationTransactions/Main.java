@@ -16,7 +16,6 @@ public class Main {
 
     @Test
     public void testTransaction(){
-//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("TransactionsDemo.xml");
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringTransactionsConfig.class);
         UserServiceImpl userService = context.getBean("userServiceImpl", UserServiceImpl.class);
         boolean transfer = userService.transfer(1, 2, 20);

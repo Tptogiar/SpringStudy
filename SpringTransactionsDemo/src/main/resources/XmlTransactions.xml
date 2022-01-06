@@ -10,7 +10,6 @@
                         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
 ">
 
-    <context:component-scan base-package="_01_TransactionsDemo"/>
     <context:property-placeholder location="databaseConfig.properties" system-properties-mode="NEVER"/>
 
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
@@ -28,10 +27,25 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-<!--    开启事务-->
-    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <bean id="userDao" class="_02_XmlTransactions.dao.impl.UserDaoImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
 
+    <bean id="userService" class="_02_XmlTransactions.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
 
     <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+    <tx:advice id="interceptor">
+        <tx:attributes>
+            <tx:method name="transfer" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config >
+        <aop:pointcut id="pointCut" expression="execution(* _02_XmlTransactions.service.impl.UserServiceImpl.*(..))"/>
+        <aop:advisor advice-ref="interceptor" pointcut-ref="pointCut"/>
+    </aop:config>
 
 </beans>

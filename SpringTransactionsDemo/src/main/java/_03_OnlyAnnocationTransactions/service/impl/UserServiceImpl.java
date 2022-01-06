@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @Transactional//加载类上，所有方法都起作用
-public class UserServiceImpl{
+public class UserServiceImpl implements UserService{
 
     @Autowired
     @Qualifier(value = "userDaoImpl")
@@ -23,14 +23,9 @@ public class UserServiceImpl{
 
     @Transactional//加方法上，只本方法都起作用
     public boolean transfer(Integer id1,Integer id2,Integer money) {
-        try {
-            userDao.cutMoney(id1,money);
-            int a= 3/0;
-            userDao.addMoney(id2,money);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return false;
-        }
+        userDao.cutMoney(id1,money);
+        int a= 3/0;
+        userDao.addMoney(id2,money);
         return true;
     }
 }
