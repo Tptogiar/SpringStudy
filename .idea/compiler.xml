@@ -7,22 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringXMLDemo" />
-        <module name="SpringAOPDemo" />
-        <module name="SpringJdbcTemplateDemo" />
-        <module name="SpringTransactionsDemo" />
-        <module name="SpringAnnotationDemo" />
-        <module name="SpringStudy" />
+        <module name="_05_SpringTransactionsDemo" />
+        <module name="_04_SpringJdbcTemplateDemo" />
+        <module name="_03_SpringAOPDemo" />
+        <module name="_02_SpringAnnotationDemo" />
+        <module name="_06_Spring5" />
+        <module name="_01_SpringXMLDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SpringAnnotationDemo" target="1.5" />
-      <module name="SpringAOPDemo" target="1.5" />
+      <module name="_01_SpringXMLDemo" target="1.5" />
+      <module name="_02_SpringAnnotationDemo" target="1.5" />
+      <module name="_03_SpringAOPDemo" target="1.5" />
+      <module name="_04_SpringJdbcTemplateDemo" target="1.5" />
+      <module name="_05_SpringTransactionsDemo" target="1.5" />
+      <module name="_06_Spring5" target="1.5" />
       <module name="SpringJDBCTemplateDemo" target="1.5" />
-      <module name="SpringJdbcTemplateDemo" target="1.5" />
       <module name="SpringStudy" target="1.5" />
-      <module name="SpringTransactionsDemo" target="1.5" />
-      <module name="SpringXMLDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

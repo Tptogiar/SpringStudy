@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SpringAOPDemo/SpringAOPDemo.iml" filepath="$PROJECT_DIR$/SpringAOPDemo/SpringAOPDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringAnnotationDemo/SpringAnnotationDemo.iml" filepath="$PROJECT_DIR$/SpringAnnotationDemo/SpringAnnotationDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringJdbcTemplateDemo/SpringJdbcTemplateDemo.iml" filepath="$PROJECT_DIR$/SpringJdbcTemplateDemo/SpringJdbcTemplateDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringStudy.iml" filepath="$PROJECT_DIR$/SpringStudy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringTransactionsDemo/SpringTransactionsDemo.iml" filepath="$PROJECT_DIR$/SpringTransactionsDemo/SpringTransactionsDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringXMLDemo/SpringXMLDemo.iml" filepath="$PROJECT_DIR$/SpringXMLDemo/SpringXMLDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_01_SpringXMLDemo/_01_SpringXMLDemo.iml" filepath="$PROJECT_DIR$/_01_SpringXMLDemo/_01_SpringXMLDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_02_SpringAnnotationDemo/_02_SpringAnnotationDemo.iml" filepath="$PROJECT_DIR$/_02_SpringAnnotationDemo/_02_SpringAnnotationDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_03_SpringAOPDemo/_03_SpringAOPDemo.iml" filepath="$PROJECT_DIR$/_03_SpringAOPDemo/_03_SpringAOPDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_04_SpringJdbcTemplateDemo/_04_SpringJdbcTemplateDemo.iml" filepath="$PROJECT_DIR$/_04_SpringJdbcTemplateDemo/_04_SpringJdbcTemplateDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_05_SpringTransactionsDemo/_05_SpringTransactionsDemo.iml" filepath="$PROJECT_DIR$/_05_SpringTransactionsDemo/_05_SpringTransactionsDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_06_Spring5/_06_Spring5.iml" filepath="$PROJECT_DIR$/_06_Spring5/_06_Spring5.iml" />
     </modules>
   </component>
 </project>

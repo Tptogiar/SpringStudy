@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+">
+
+    <bean id="userServiceImpl" class="_04_XMLExecution.impl.UserServiceImpl"></bean>
+
+    <bean id="userServiceImplProxy" class="_04_XMLExecution.proxy.UserServiceImplProxy"></bean>
+
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="userServiceImplAdd" expression="execution(* _04_XMLExecution.impl.UserServiceImpl.add(..))"/>
+        <aop:aspect ref="userServiceImplProxy">
+            <aop:before method="before" pointcut-ref="userServiceImplAdd"></aop:before>
+            <aop:after method="before" pointcut="execution(* _04_XMLExecution.impl.UserServiceImpl.add(..))"></aop:after>
+        </aop:aspect>
+    </aop:config>
+
+
+</beans>

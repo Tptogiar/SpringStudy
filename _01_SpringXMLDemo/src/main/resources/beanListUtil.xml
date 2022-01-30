@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <util:list id="listTest">
+        <value>10</value>
+        <value>11</value>
+        <ref bean="listUtil"></ref>
+    </util:list>
+
+    <bean id="listUtil" class="_06_InjectListUtil.Student">
+        <property name="array">
+            <array>
+                <value>111</value>
+                <value>222</value>
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>333</value>
+                <value>444</value>
+                <ref bean="listUtil"></ref>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>555</value>
+                <value>666</value>
+
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="7" value="777"></entry>
+                <entry key="8" value="888"></entry>
+                <entry key="9" value-ref="listUtil"></entry>
+            </map>
+        </property>
+        <property name="listUtil" ref="listTest"></property>
+    </bean>
+
+
+</beans>
